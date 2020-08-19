@@ -1,16 +1,89 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>title</title>
-  <meta name="author" content="name">
-  <meta name="description" content="description here">
-  <meta name="keywords" content="keywords,here">
-  <link rel="stylesheet" href="./css/flexbox.css" type="text/css">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet"  href= "css/flexbox.css"/>
+    <!-- <link rel="stylesheet"  href= "css/normalize.css"/> -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <title>Flex Page</title>
   </head>
   <body>
-
-  <script src="index.js" type="text/javascript"></script>
+    <div class="wrap">
+      <header>
+        <div class="nav container">
+            <ul class="left-list">
+              <li><a href="#home">HOME&nbsp; </a></li>
+              <li><a href="#wd-tips">WEB DESIGN TIPS&nbsp; </a></li>
+              <li><a href="#wd-tools">WEB DESIGN TOOLS&nbsp; </a></li>
+              <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+            <ul class="right-list">
+              <li><a href="index.html">To Float Page</a></li>
+              <li><img src="images/profile.jpg" alt="not found" class="protolio-image"></li>
+            </ul>
+        </div>
+      </header>
+      <div class="cover-page">
+        <div class="container">
+          <img src="images/cover-image.jpg" alt="" class="cover-image">
+        <h1 class="main-title">I &hearts; WEB DESIGN</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row-linear-right clearfix" id="home">
+          <img src="images/home-image.jpg" alt="" class="">
+          <h1>&nbsp;&nbsp;&nbsp;HOME</h1>
+        <p>Web design is the process of planning, conceptualizing, and arranging content intended for the Internet.
+           Modern web design goes beyond how things look (aesthetics) to include how things work (functionality).
+          </p>
+        </div>
+        <div class="row-linear-right clearfix" id="wd-tips">
+          <img src="images/tips-image.png" alt="" class="">
+          <h1>&nbsp;&nbsp;&nbsp;WEB DESIGN TIPS</h1>
+        <p>
+          Failing to plan is planning to fail. This is also true in web design. 
+          When the basics are in place, will you be able to put creative touches on top. Here’s what planning can look like:
+          Define the website’s goal, Sketch out the vistor’s journey, Come up with a style guide, Focus on the Structure,
+          Stick With Web Standards for consistency, Attention to Content Formatting, Try with one page first, and A/B testing.
+         </p>
+          </div>
+        <div class="nav">
+          <div class="in-table" id="wd-tools">
+            <h1>WEB DESIGN TOOLS</h1>
+            <img src="images/tools-image.jpeg"><br>
+            <p style="text-align:center">
+              <p>
+                1. Firefox Developer<br>
+                2. Photoshop<br>
+                3. Panic Coda<br>
+                4. Dreamweaver<br>
+                5. Fireworks<br>  
+              </p>
+            </p>
+          </div>
+          <div class="in-table" id="contact">
+            <h1>CONTACT US</h1>
+            <img class="table-image" src="images/contact-image.jpeg" ><br>
+            <p style="text-align:center">
+              <p>
+                Call: (000)000-0000<br> 
+              email:abs@CTD_xxx.edu
+              </p>
+              </p>
+            </div>
+        </div>
+        <div class="social-media-icon">
+          <a href="#intagram" class=""><img src="images/instagram.png" alt="not found" class="social-icons"> </a>
+          <a href="#facebook" class=""><img src="images/facebook.png" alt="not found" class="social-icons"></a>
+          <a href="#twitter" class=""><img src="images/twitter.png" alt="not found" class="social-icons"></a>
+        </div>
+      </div>
+     <img src="images/cover-image.jpg" alt="not found"/>
+    </div>
+    <footer>
+      <span>@2020</span>
+    </footer>
   </body>
 </html>

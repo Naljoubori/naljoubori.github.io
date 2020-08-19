@@ -1,0 +1,295 @@
+*{
+  box-sizing: border-box;
+  text-decoration: rgb(48, 25, 4);
+  font-family: Comic;
+  }
+  
+  header {
+    margin: 0;
+    background-color: rgba(209, 101, 0, 0.699);
+  }
+  
+  body{
+    margin: 0;
+  }
+  
+  a{
+      color: rgb(39, 22, 2);
+      text-decoration: none;
+      font-weight: bolder;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  li{
+    /* text-transform: capitalize; */
+  
+    width: auto;
+    margin: 5px;
+  }
+  
+  footer{
+    text-align: center;
+    background-color:black;
+    color: white;
+    margin-bottom: 0;
+    padding: 30px;
+  }
+  
+  
+  
+  /* pseudo-classes */
+  
+  :root{
+     background: white;
+   }
+  
+  /* you can put the #class-id:target and apply a different style for the id element */
+  :target{
+    box-shadow: 0px 0px 10px 15px rgba(0,0,0, .4);
+  }
+  
+  a:hover{
+    color: white;
+  }
+  
+  .cover-image:hover{
+    box-shadow: 0px 0px 10px 15px rgba(0,0,0, .8);
+  }
+  
+  .clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  div~img:hover{
+      box-shadow: 0px 0px 10px 8px rgba(0,0,0, .8);
+  }
+  
+  /* this makes the image bigger when the mouse is over the image */
+  .profile-image:hover{
+    transform: scale(1.3);
+    border: solid 2px black;
+  }
+  
+  
+  
+  
+  /* ------ custom classes -------- */
+  .nav{
+    margin:0;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  
+  .nav-items{
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .nav-right{
+    flex-grow: 0;
+    justify-content: center;
+  }
+
+  
+  /* this makes every item of the list go in line instead on blocks */
+  .left-list li , .right-list li{
+    display: inline-block;
+  }
+  
+  .left-list{
+    width: 46%;
+    float: left;
+    margin-top: 27px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  .right-list{
+    text-align: right;
+    width: 50%;
+    float: right;
+  }
+  
+  .container{
+    margin: 0 auto;
+    width: 98%;
+  }
+  
+  /*this gives the circular shape to the profile image and also center it in the middle of the nav div in Y */
+  .protolio-image{
+    vertical-align: middle;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: solid 2px rgb(170, 155, 16);
+    border-radius: 50%
+  }
+  
+  
+  header{
+    position: fixed;
+    width: 100%;
+  }
+  
+  .cover-page{
+    padding-top: 200px;
+    padding-bottom: 220px;
+    text-align: center;
+    color: rgb(170, 155, 16);
+    background: linear-gradient(0deg,#fff,transparent),
+    url(https://cdn1.vectorstock.com/i/1000x1000/06/40/design-creative-idea-and-innovation-infographic-vector-1750640.jpg) no-repeat center;
+    background-size:  cover;
+  
+  }
+  
+  .cover-image{
+    position: center;
+    margin-bottom: 100px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 10px 15px rgba(0,0,0, .4);
+    border-radius: 50%
+  }
+  
+  
+  .col{
+    height: auto;
+    overflow: auto;
+  }
+  
+  .main-title{
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 0;
+
+  
+  }
+  
+  .table-image{
+    margin-bottom: 20px;
+    width: 80%;
+    height: 80%;
+  }
+  
+  .in-table{
+    width: 48%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    float: left;
+    margin-bottom: 100px;
+  }
+  
+  .in-table p{
+    line-height: 1.4;
+    margin: auto;
+    max-width: 80%;
+    padding-bottom: 10px;
+    text-align: justify;
+  }
+  
+  .in-table h1{
+      font-size: 2em;
+  }
+  
+  .row-linear-right, .row-linear-left{
+    margin: 100px 0px;
+  }
+  
+  .row-linear-right p, .row-linear-left p{
+    box-shadow: 0px 0px 10px 15px rgba(0,0,0, .8);
+    display: flex;
+    flex-direction: row;
+    margin: 8%  4% auto;
+  }
+  
+  .row-linear-right img{
+    float:right;
+  }
+  
+  .row-linear-right img, .row-linear-left img{
+    margin: 0 auto;
+    margin: 10px;
+    width: 30%;
+    height: 30%;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0, .8);
+  }
+  
+  .row-linear-left img{
+    float:left;
+  }
+  
+  /* this is a combinator for all the images tags after a div */
+  div ~ img{
+    position: fixed;
+    background-color: white;
+    bottom: 4%;
+    right: 1em;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid white;
+    z-index: 1000;
+  }
+  
+  
+  /*   margin: 0 auto; */
+  
+  /*  when the screen is bigger */
+  @media (min-width : 902px) and (max-width:1600px) {
+  
+  
+  
+  .container{
+    margin: 0 auto;
+    width: 85%;
+  }
+  
+  .in-table{
+  padding: 10px;
+  flex: 1 200px;
+  margin-top: 0;
+  margin-bottom: auto;
+  }
+  
+  .in-table p{
+    max-width: 80%;
+  }
+  
+  .table-image{
+    margin-bottom: 20px;
+    width: 150;
+    height: 150;
+  }
+  
+  div ~ img{
+    width: 80px;
+    height: 80px;
+  }
+  
+  }
+  .social-media-icon{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 20%;
+    right: 1em;
+  }
+  
+  .social-icons{
+    margin: 30%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  
